@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+  width:380px;
+  height:550px;
+  overflow-y: scroll;
+  margin:20px auto;
+  border: 4px solid black;
+  border-radius:15px;
+  padding-bottom: 10px;
+  box-shadow:10px 10px 5px grey
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    padding:8px;
+    border-bottom: 1px solid darkgray; 
+}
+.logo{
+    width:110px;
+}
+.user-avatar{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    margin-top:7px;
+}
+
+.Postcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+#postsList{
+    list-style: none;
+    padding:0px;
+}
+
+.userName{
+    display:flex;
+    gap:9px;
+    padding:10px 10px 15px 8px;
+    
+}
+
+#user-name{
+    margin-top:10px ;
+}
+
+.user-info{
+    margin-bottom:0px;
+    padding-bottom: 0px;
+    margin-top:0px;
+    padding-top:0px;
+    font-size:14px;
+}
+
+.peoplePosts{
+    width:100%; 
+}
+
+.icons{
+    padding-top:10px;
+}
+.icons img{
+    width:30px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+
+.icons img:hover{
+   cursor: pointer;
+   width:33px;
+}
+
+.description{
+    padding-left:10px
+}
+
+.description p{
+    margin-bottom:2px;
+}
+
+.highlight{
+    font-weight: 700;
+}
