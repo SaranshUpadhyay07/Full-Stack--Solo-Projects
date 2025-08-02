@@ -1,0 +1,34 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="header-div">
+                <img src="/images/header.png"/>
+            </div>
+            <div class="items-div" id="items-div">    
+            </div>
+            <div class="prices" id="prices">
+                <h2 style="text-align:center">Your Total</h2>
+                <div class="prices-div" id="prices-div"></div>
+                <div class="totaled" id="total"></div>
+                <button class="Complete" id ="Complete" data-complete="yes">Complete Order</button>
+                
+            </div>
+        </div>
+        <div class="final-payment" id = 'final-payment'>
+                <h2>Enter your details</h2>
+            <form class="payment-form" id="payment">
+                <input type="text" required placeholder="Enter Your Name"/>
+                <input type="text" required placeholder="Enter Your Card"/>
+                <input type="text" required placeholder="Enter CVV"/>
+                <button type="submit">Pay</button>
+            </form>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
