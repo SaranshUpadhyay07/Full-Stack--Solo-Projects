@@ -481,3 +481,7 @@ button#view-btn-3 {
         display: flex !important;
     }
 }
+
+#view-btn-1:hover, #hamburger-menu:hover{
+    cursor: pointer;
+}
