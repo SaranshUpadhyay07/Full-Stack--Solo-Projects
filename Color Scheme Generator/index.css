@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e0eafc;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:80%;
+    max-width:500px;
+    margin: 4.5em auto;
+    padding: 1.4em;
+    border: 5px solid rgb(0, 179, 255);
+    border-radius: 10px;
+    gap:1em;
+    background-color: #333333;
+    color:white;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    box-shadow: 3px 3px 10px white,
+    -3px -3px 10px white;
+}
+h1{
+    font-size:1.5rem;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    margin-top:1em ;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:0.9em;
+}
+.color-picker{
+    display: flex;
+    gap:0.4em;
+    font-size:0.9rem;
+}
+.color-picker input{
+    width:50%;
+}
+select{
+    width:100%;
+    padding:0.2em;
+    font-size:0.9rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+form button{
+    margin-top:0.5em !important;
+    padding: 0.5em;
+    background-color: rgb(52, 152, 219);
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    border: 1px grey solid;
+    border-radius: 5px;
+    width: fit-content;
+    margin:0 auto;
+}
+
+.color-scheme {
+    display: grid;
+    grid-template-areas: "color-1 color-2 color-3 color-4 color-5 color-6";
+    grid-template-columns: repeat(6, 1fr);
+    height: 220px;
+    width: 100%;
+    text-align: center;
+}
+
+.color {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:0.1em;
+}
+
+.color-generated {
+    flex: 1;
+    border: 1px solid #f2f1f1;
+}
+
+.color p {
+    margin: 0.5em 0 0;
+    font-size: 0.6rem;
+    color: rgb(232, 232, 232);
+}
+
+.color-1{
+    grid-area: color-1;
+}
+.color-2{
+     grid-area: color-2;
+}
+.color-3{
+    grid-area: color-3;
+}
+.color-4{
+    grid-area: color-4;
+}
+.color-5{
+    grid-area: color-5;
+}
+.color-6{
+    grid-area: color-6;
+}
+
+@media (min-width: 600px) {
+    h1{
+        font-size: 2.2rem;
+    }
+}
