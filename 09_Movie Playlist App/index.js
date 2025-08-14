@@ -29,7 +29,7 @@ searchBtn.addEventListener('click', async () => {
     movieArray = []
     for(let movie of data.Search){
 
-        const newData = await fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=edac0cf2&plot=full`)
+        const newData = await fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=edac0cf2&plot=full`)
         const movieData = await newData.json()
         let inner = `<div class="movieItem">
                         <img src="${movieData.Poster !== 'N/A' ? movieData.Poster : 'default.png'}" alt="${movieData.Title}">
