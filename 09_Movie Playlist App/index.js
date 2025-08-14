@@ -22,7 +22,7 @@ document.body.addEventListener('click',function(e){
 
 searchBtn.addEventListener('click', async () => {
     const searchInput = document.getElementById('search-input').value
-    const response = await fetch(`http://www.omdbapi.com/?s=${searchInput}&apikey=edac0cf2`)
+    const response = await fetch(`https://www.omdbapi.com/?s=${searchInput}&apikey=edac0cf2`)
     const data = await response.json()
     let html = ''
     i=0
