@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class = "header">
+                <img src= "assets/parrot.png" class="parrot-img"/>
+                <div>
+                    <h1>PollyGlot</h1>
+                    <p>Perfect Translation Every Time</p>
+                </div>
+            </div>
+            <div class="main">
+                <h2>Translate Text</h2>
+                <form action="submit" id="translationForm">
+                    <textarea id="inputText" rows="4" placeholder="Enter text to translate..."></textarea>
+                    <div class="lang-opt" id="lang-opt">
+                        <h2>Choose Language: </h2>
+                        <div class="option">
+                            <input type="radio" id="spanish" name="language" value="Spanish" checked>
+                            <label for="spanish">Spanish</label><img src="assets/sp-flag.png" alt="Spanish Flag" />
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="french" name="language" value="French">
+                            <label for="french">French</label><img src="assets/fr-flag.png" alt="French Flag" />
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="japanese" name="language" value="Japanese">
+                            <label for="japanese">Japanese</label><img src="assets/jpn-flag.png" alt="Japanese Flag" />
+                        </div>
+                    </div>
+                    <button id="translateButton">Translate</button>
+                </form>   
+                <div id="outputContainer" class="hidden outputContainer">
+                    <h3>Translation:</h3>
+                    <p id="outputText"></p>
+                    <button id="backButton" class="hidden">Back</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
