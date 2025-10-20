@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PopChoice</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container container-2">
+      <img src="./images/movie.jpg" alt="Movie Image" class="movie-image" />
+      <h2>PopChoice</h2>
+      <h4>Answer a few questions to get movie recommendations!</h4>
+
+        <div class="question-container">
+            <h2 id="personNumber">Person 1</h2>
+            <form action="question.html" method="post" class="questionForm" id="questionForm">
+            <label for="genreInput">Preferred Genre:</label><br />
+            <input
+                type="text"
+                id="genreInput"
+                name="genre"
+                placeholder="e.g., Action, Comedy, Drama"
+                required
+            /><br />
+    
+            <label for="languageInput">What's your favourite movie and why?</label><br />
+            <input
+                type="text"
+                id="moodInput"
+                name="mood"
+                placeholder="e.g.,  I love Inception because..."
+                required
+            /><br />
+
+            <button type="submit" class="next" id="nextButton">NEXT</button>
+            </form>
+        <button  class="getRecommendations hidden" id="getRecommendationsButton">Get recommendations</button>
+
+    </div>
+    <script type="module" src="question.js"></script>
+    </body> 
+</html>

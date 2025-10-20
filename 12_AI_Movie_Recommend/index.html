@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PopChoice</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/movie.jpg" alt="Movie Image" class="movie-image" />
+      <h2>PopChoice</h2>
+
+      <form action="question.html" method="post" class="peopleInput" id="peopleInput">
+        <input
+          type="text"
+          id="numberInput"
+          name="number"
+          placeholder="How many people are there"
+          required
+        /><br />
+
+        <input
+          type="text"
+          id="timeInput"
+          name="time"
+          placeholder="How much time do you have"
+          required
+        /><br />
+
+        <button type="submit" class="letsGo">Let's go</button>
+      </form>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

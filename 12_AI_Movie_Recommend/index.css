@@ -1,0 +1,231 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-image: url('./images/background.webp');
+    background-position: center;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000000;
+    border-radius: 12px;
+    margin: 14% 10%;
+    padding: 1.1em;
+}
+.back-button{
+    text-decoration: none;
+}
+.recommendations{
+    margin-top:1em;
+}
+.container img{
+    width: 100px;
+    height: 120px;
+    border-radius: 5px;
+    border:1px white solid;
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+.container-2{
+    margin:7% 20%;
+}
+.peopleInput, .questionForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+    gap:0.2em;
+}
+.peopleInput input, .questionForm input{
+    padding: 1em;
+    border-radius: 5px;
+    border:0px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #5c5c5c;
+    color:#ffffff;
+}
+.letsGo,.next,.getRecommendations,.still-questions-button,.back-button{
+    margin: 1em 0em;
+    padding: 1em 2em;
+    border-radius: 5px;
+    border:0px;
+    background-color: #ffffff;
+    color:#000000;
+    font-weight: bold;
+    cursor: pointer;
+}
+.still-questions-button,.back-button{
+    margin-bottom:0;
+}
+.hidden{
+    display: none !important;
+}
+.next{
+    margin-bottom:0.2em  !important;
+}
+h4{
+    text-align: center;
+    margin: 0%;
+}
+.question-container{
+    padding: 1em;
+    text-align: center;
+}
+.question-container h2{
+    margin: 0em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.questionForm {
+    gap: 0em !important;
+}
+@media (min-width: 768px) {
+    .container {
+        margin: 5% 30%;
+    }
+}
+
+/* Chat Modal Styles */
+.chat-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.chat-modal.hidden {
+    display: none !important;
+}
+
+.chat-modal-content {
+    background-color: #131313;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ffffff;
+}
+
+.chat-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid #5c5c5c;
+    color: #ffffff;
+}
+
+.chat-modal-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0;
+}
+
+.close-button:hover {
+    color: #ff6b6b;
+}
+.chat-done{
+    color:white
+}
+.chat-modal-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.chat-message {
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+.chat-message.user {
+    justify-content: flex-end;
+}
+
+.chat-message.bot {
+    justify-content: flex-start;
+}
+
+.message-text {
+    max-width: 70%;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    word-wrap: break-word;
+}
+
+.chat-message.user .message-text {
+    background-color: #0084ff;
+    color: #ffffff;
+}
+
+.chat-message.bot .message-text {
+    background-color: #5c5c5c;
+    color: #ffffff;
+}
+
+.chat-modal-footer {
+    display: flex;
+    gap: 0.5em;
+    padding: 1em;
+    border-top: 1px solid #5c5c5c;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid #5c5c5c;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.chat-input::placeholder {
+    color: #888;
+}
+
+.chat-input:focus {
+    outline: none;
+    border-color: #0084ff;
+}
+
+.send-button {
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    border: none;
+    background-color: #0084ff;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.send-button:hover {
+    background-color: #0066cc;
+}

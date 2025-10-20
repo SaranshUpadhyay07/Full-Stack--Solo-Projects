@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PopChoice</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/movie.jpg" alt="Movie Image" class="movie-image" />
+      <h2>PopChoice</h2>
+      <h4>Your AI Movie Recommendations!</h4>
+
+      <div class="suggestions-container">
+        <div id="loading" class="loading">
+          <p>Getting your personalized recommendations...</p>
+        </div>
+
+        <div id="recommendations" class="recommendations hidden">
+          <!-- AI Recommendations will be displayed here -->
+        </div>
+
+        <div id="error" class="error hidden">
+          <p>Sorry, we couldn't fetch recommendations at the moment. Please try again.</p>
+        </div>
+      </div>
+
+      <a class="back-button" id="backButton" href="index.html">Back</a>
+      <button class="still-questions-button" id="watchButton">Questions?</button>
+    </div>
+
+    <!-- Chat Modal -->
+    <div id="chatModal" class="chat-modal hidden">
+      <div class="chat-modal-content">
+        <div class="chat-modal-header">
+          <h3>Chat with PopChoice</h3>
+          <button class="close-button" id="closeModalButton">&times;</button>
+        </div>
+        <div class="chat-modal-body" id="chatBoxBody">
+          <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-modal-footer">
+          <input 
+            type="text" 
+            id="chatInput" 
+            placeholder="Ask a question..." 
+            class="chat-input"
+          />
+          <button class="send-button" id="sendButton">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="suggestion.js"></script>
+    </body>
+</html>
