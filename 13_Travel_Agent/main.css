@@ -1,0 +1,244 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Base layout */
+.sub-container-1 {
+    display: flex;
+    height: 100vh;
+}
+
+.left-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    background-color: rgba(255, 254, 241);
+    background-image: url('./images/back.png');
+    color: rgb(50, 30, 3);
+    text-align: center;
+}
+
+.left-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.left-container div {
+    background-color: rgb(255, 254, 239);
+    padding: 1em;
+    border-radius: 10px;
+    border-radius: 30%;
+}
+
+.left-container h1 {
+    margin: 0.2em 0;
+}
+
+.right-container {
+    width: 40%;
+    background-color: rgb(50, 30, 3);
+    color: rgba(255, 254, 241);
+    display: flex;
+    flex-direction: column;
+    padding: 0.2em 3em;
+}
+.details, .details div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.details div{
+    margin-bottom:1em
+}
+.details label{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom :0;
+}
+.details input, .details select{
+    padding: 0.3em;
+    border-radius: 6px;
+    border: none;
+    width: 40%;
+    margin:0 auto;
+}
+.right-container h2 {
+    margin-bottom: 1.5em;
+}
+.details button{
+    padding: 0.7em 1em;
+    background-color: rgb(255, 254, 241);
+    color: rgb(50, 30, 3);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 30%;
+    margin: 0 auto;
+}
+.right-container p {
+    line-height: 1.6;
+}
+
+.right-container a {
+    margin-top: 1em;
+    padding: 0.7em 1em;
+    background-color: rgb(255, 254, 241);
+    color: rgb(50, 30, 3);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 30%;
+    text-decoration: none;
+}
+
+.right-container a:hover {
+    background-color: rgb(230, 228, 210);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+/* ==============================
+   📱 Responsive Breakpoints
+   ============================== */
+/* ==============================
+   📱 Responsive Breakpoints (Updated for Form)
+   ============================== */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .sub-container-1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Hide left section completely */
+    .left-container {
+        display: none;
+    }
+
+    .right-container {
+        width: 100%;
+        padding: 3em 2em;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .details {
+        width: 80%;
+        margin: 0 auto;
+        gap: 1.5em;
+    }
+
+    .details div {
+        margin-bottom: 1em;
+    }
+
+    .details label {
+        font-size: 1em;
+        margin-bottom: 0.3em;
+    }
+
+    .details input,
+    .details select {
+        width: 80%;
+        padding: 0.6em;
+        font-size: 1em;
+    }
+
+    .details button {
+        width: 50%;
+        padding: 0.8em;
+        font-size: 1em;
+    }
+}
+
+/* Mobile Landscape / Small Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .left-container {
+        display: none;
+    }
+
+    .right-container {
+        width: 100%;
+        padding: 2em 1.2em;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .details {
+        width: 90%;
+        gap: 1em;
+    }
+
+    .details input,
+    .details select {
+        width: 90%;
+        padding: 0.6em;
+        font-size: 0.95em;
+    }
+
+    .details button {
+        width: 60%;
+        padding: 0.7em;
+        font-size: 0.95em;
+    }
+}
+
+/* Mobile Portrait (max-width: 480px) */
+@media (max-width: 480px) {
+    .left-container {
+        display: none;
+    }
+
+    .right-container {
+        width: 100%;
+        padding: 1.5em 1em;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .details {
+        width: 100%;
+        gap: 0.8em;
+    }
+
+    .details div {
+        margin-bottom: 0.8em;
+    }
+
+    .details label {
+        font-size: 0.9em;
+    }
+
+    .details input,
+    .details select {
+        width: 95%;
+        padding: 0.5em;
+        font-size: 0.9em;
+    }
+
+    .details button {
+        width: 70%;
+        padding: 0.6em;
+        font-size: 0.9em;
+    }
+}

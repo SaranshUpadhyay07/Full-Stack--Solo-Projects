@@ -1,0 +1,15 @@
+{
+  "name": "Scrim-s05s2c5",
+  "description": "https://scrimba.com/learn-ai-agents-c034/~0q",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/genai": "^1.25.0",
+    "vite": "latest",
+    "@google/generative-ai": "^0.24.1"
+  }
+}
